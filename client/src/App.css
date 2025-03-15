@@ -1,0 +1,172 @@
+/* App.css - 主播内容建议系统样式 */
+
+/* 全局样式 */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  color: #333;
+}
+
+/* 容器样式 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* 标题样式 */
+h1 {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+h1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+}
+
+h2 {
+  color: #3498db;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* 表单样式 */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.form-label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* 按钮样式 */
+.btn-primary {
+  background-color: #3498db;
+  border-color: #3498db;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 卡片样式 */
+.card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+/* 点赞/点踩按钮样式 */
+.btn-outline-success, .btn-outline-danger {
+  border-radius: 20px;
+  padding: 4px 12px;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.btn-outline-danger:hover {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+/* 徽章样式 */
+.badge {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+/* 加载状态和空状态 */
+.text-center {
+  padding: 2rem 0;
+  color: #7f8c8d;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.row {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 错误提示样式 */
+.alert-danger {
+  background-color: #fff;
+  color: #e74c3c;
+  border-left: 4px solid #e74c3c;
+  border-radius: 0;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
